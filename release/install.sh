@@ -143,7 +143,7 @@ install_uim_server() {
   chmod +x uim-server
   mkdir /etc/uim-server/ -p
   rm /etc/systemd/system/uim-server.service -f
-  file="https://github.com/SSPanel-NeXT/mirror/raw/main/uim-server/uim-server.service"
+  file="https://github.com/johnzheng3585/NeXT-Server/raw/main/release/uim-server.service"
   wget -q -O /etc/systemd/system/uim-server.service ${file}
   systemctl daemon-reload
   systemctl stop uim-server
